@@ -1,0 +1,8 @@
+.gitignore
+
+https://gitee.com/flymatt01/fitness-app-h51031.git
+
+第一次：
+	git clone https://gitee.com/flymatt01/fitness-app-h51031.git
+
+

@@ -1,0 +1,102 @@
+body {
+  background: #f9f9f9;
+}
+.blue {
+  background: #4294ff;
+  color: #ffffff;
+  padding: 0 5%;
+  width: 100%;
+}
+.head {
+  position: relative;
+  padding-right: 20px;
+  height: 46px;
+  line-height: 46px;
+  padding-left: 16px;
+  width: 100%;
+  transform: rotate(180deg);
+  &::after {
+    content: " ";
+    width: 12px;
+    height: 24px;
+    background-color: currentColor;
+    mask-image: url(../image/right.svg);
+    -webkit-mask-image: url(../image/right.svg);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -12px;
+  }
+}
+.mysport {
+  display: flex;
+  justify-content: space-between;
+}
+.mydata {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 60px;
+}
+.avatar {
+  background: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.twolist {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  .big {
+    span {
+      font-size: 30px;
+    }
+  }
+}
+.border {
+  width: 0;
+  border-left: 1px dashed #ffffff;
+  height: initial;
+  padding: 0 5px;
+}
+.sumsport,
+.weekqk {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.sumsport h5,
+.weekqk h5 {
+  color: rgb(170, 217, 247);
+}
+.three {
+  display: flex;
+  justify-content: space-between;
+}
+.threedata {
+  display: flex;
+  flex-direction: column;
+  h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(170, 217, 247);
+  }
+  span {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
+.echarts {
+  padding: 0 5%;
+}
+#Length,
+#ification,
+#strip,
+#fold {
+  height: 240px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-top: 5%;
+}

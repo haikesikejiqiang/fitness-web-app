@@ -1,0 +1,355 @@
+// html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+.container {
+  height: 100%;
+}
+main {
+  overflow-y: scroll;
+  flex: 1;
+  margin-bottom: 16px;
+}
+.now {
+  padding: 10px 0 5px 0;
+}
+.number {
+  height: 64px;
+  span {
+    font-size: 48px;
+    color: #4294ff;
+    margin-right: 3px;
+  }
+}
+.map {
+  width: 100%;
+  height: 485px;
+}
+.mapbox {
+  position: relative;
+  .go {
+    width: 191px;
+    height: 191px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(66, 148, 255, 0.51);
+    color: #2096d0;
+    font-weight: 600;
+    line-height: 191px;
+    text-align: center;
+    font-size: 80px;
+    z-index: 1;
+  }
+}
+.mask {
+  z-index: 2;
+  background: #1592cc;
+}
+.gps_mask {
+  z-index: 4;
+  background: skyblue;
+}
+.path {
+  display: flex;
+  justify-content: space-between;
+  .text {
+    p {
+      font-size: 14px;
+      color: #9a9a9a;
+    }
+  }
+  .iconfont {
+    &.iconarrow-right {
+      font-size: 35px;
+      color: #8a8a8a;
+    }
+  }
+}
+.down {
+  display: flex;
+  font-size: 120px;
+  font-weight: 600;
+  height: 100%;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+.sport_end {
+  z-index: 3;
+  background: skyblue;
+  .success {
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255);
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    left: 20px;
+    top: 20px;
+    border: 1px solid rgba(187, 187, 187);
+  }
+}
+.card {
+  padding: 18px 20px;
+  position: absolute;
+  height: 170px;
+  border-radius: 10px;
+  background: #ffffff;
+  bottom: 48px;
+  width: 90%;
+  margin-left: 5%;
+  .out {
+    color: #4294ff;
+    font-size: 14px;
+  }
+  .out_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed rgb(187, 187, 187);
+    .km {
+      font-size: 16px;
+      span {
+        font-size: 36px;
+      }
+    }
+    .date {
+      color: rgb(138, 138, 138);
+      font-size: 18px;
+      margin-bottom: 22px;
+    }
+  }
+  .out_speed {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & > div {
+        font-size: 18px;
+      }
+      & > span {
+        font-size: 12px;
+        color: #9a9a9a;
+      }
+    }
+  }
+  &.door {
+    display: flex;
+    flex-direction: column;
+    .out_speed {
+      & > div {
+        & > div {
+          font-size: 28px;
+          color: #101010;
+        }
+        & > span {
+          font-size: 14px;
+          color: #333333;
+        }
+      }
+    }
+  }
+}
+.sport_mask,
+.mask,
+.sport_end,
+.gps_mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  max-width: 540px;
+  min-width: 250px;
+  overflow-y: scroll;
+}
+.sport_mask {
+  z-index: 3;
+  background: #59b2db;
+  .header {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+    .title {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .km {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    span {
+      font-size: 100px;
+    }
+  }
+  .here {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    span {
+      font-size: 14px;
+      color: #acdfff;
+    }
+  }
+  .pngs {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0 20px 0;
+    div {
+      display: flex;
+      flex-direction: column;
+      color: #acdfff;
+      text-align: center;
+    }
+  }
+  .whentime {
+    display: flex;
+    font-size: 30px;
+    color: #ffffff;
+    justify-content: space-around;
+  }
+  .footer {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    &::before {
+      display: block;
+      content: "";
+      width: 50px;
+      height: 50px;
+    }
+    .play {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 50%;
+      background: #ffffff;
+      color: #1592cc;
+      align-items: center;
+      justify-content: center;
+    }
+    .lock {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      color: #ffffff;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgb(255, 255, 255);
+    }
+  }
+  .play {
+    img {
+      height: 36px;
+    }
+  }
+}
+.title {
+  .outdoor {
+    color: #aad9f7;
+  }
+  .inthe {
+    font-size: 24px;
+    color: #ffffff;
+  }
+}
+.header {
+  .icon {
+    display: flex;
+    align-items: center;
+    div {
+      margin-left: 20px;
+    }
+  }
+}
+.true {
+  position: absolute;
+  // display: none;
+}
+.btn {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  z-index: -1;
+}
+.minbtn,
+.danr,
+.truebtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.danr {
+  transition: all 2s;
+  background: #ff6060;
+}
+.truebtn {
+  background: #79f0c2;
+  color: #ffffff;
+  display: none;
+}
+.minbtn {
+  background: #79f0c2;
+  transition: all 2s;
+}
+.minbtn span,
+.danr span {
+  color: #ffffff;
+}
+.out {
+  &.door {
+    border-bottom: 1px dashed rgba(187, 187, 187, 100);
+    padding-bottom: 15px;
+  }
+}
+.out_speed {
+  &.door {
+    flex: 1;
+    align-items: center;
+  }
+}
+.iconfont {
+  &.iconleftarrow {
+    &.door {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      width: 40px;
+      height: 40px;
+      background: white;
+      border-radius: 20px;
+      line-height: 40px;
+      text-align: center;
+      color: #8a8a8a;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}
+#gps,
+#endGps {
+  height: 100%;
+}

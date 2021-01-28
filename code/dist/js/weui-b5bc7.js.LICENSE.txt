@@ -1,0 +1,5 @@
+/*!
+ * weui.js v1.2.2 (https://weui.io)
+ * Copyright 2020, wechat ui team
+ * MIT license
+ */

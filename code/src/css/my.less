@@ -1,0 +1,171 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background: #e8e8e8;
+}
+
+html {
+  background: #ffffff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  flex: 1;
+  overflow-y: scroll;
+  .row {
+    background: #ffffff;
+  }
+}
+
+a {
+  &.iconfont {
+    &.iconarrow-right {
+      font-size: 24px;
+      color: #8a8a8a;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.avatar_box {
+  padding: 34px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  & > .avatar {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: 3px solid rgba(66, 148, 255, 100);
+    & > .head {
+      width: 100%;
+      height: 100%;
+      border-radius: 60px;
+      background-size: cover;
+    }
+    & > .vip {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  & > .user_data {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    line-height: 120px;
+    margin-left: 15px;
+    & > span {
+      font-size: 20px;
+    }
+  }
+}
+
+.user_desc {
+  font-size: 18px;
+  color: rgba(138, 138, 138, 100);
+}
+
+.row {
+  &.h1 {
+    padding: 15px 0;
+    .count {
+      display: flex;
+      align-items: center;
+      & > span {
+        font-size: 16px;
+        color: #8a8a8a;
+        margin-right: 9px;
+      }
+    }
+  }
+  &.right {
+    .plate {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.dynamic {
+  height: 24px;
+  line-height: 24px;
+  word-spacing: 4px;
+  & > span {
+    font-size: 18px;
+    vertical-align: top;
+  }
+  &.position {
+    position: relative;
+  }
+}
+
+.sport_data {
+  display: flex;
+  justify-content: space-between;
+  .title {
+    color: #8a8a8a;
+    font-size: 16px;
+  }
+  span {
+    color: #4294ff;
+    font-size: 40px;
+  }
+}
+
+.movement {
+  margin-left: 9px;
+}
+
+.expend {
+  margin-right: 30px;
+}
+
+.M {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transform: rotate(90deg);
+}
+
+ul {
+  &.medal {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-right: 18px;
+    li {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      border: 1px solid rgba(187, 187, 187, 100);
+    }
+  }
+}
+
+.exit {
+  cursor: pointer;
+  color: #4294ff;
+  font-size: 18px;
+  padding: 15px 0;
+  text-align: center;
+  margin-bottom: 15px;
+  background: #ffffff;
+}
+
+@media screen and (max-width: 320px) {
+  #account {
+    font-size: 17px;
+  }
+}

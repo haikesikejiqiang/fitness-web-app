@@ -1,0 +1,163 @@
+{
+  "id": "2212325",
+  "name": "源码健身 Fitness APP",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1897288",
+      "name": "图表 折线图",
+      "font_class": "chart",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "13216418",
+      "name": "徽章",
+      "font_class": "badge",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "2175327",
+      "name": "个人动态-信息",
+      "font_class": "dynamic",
+      "unicode": "e6d8",
+      "unicode_decimal": 59096
+    },
+    {
+      "icon_id": "5485664",
+      "name": "速度",
+      "font_class": "sudu",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "435924",
+      "name": "卡路里",
+      "font_class": "qialuli",
+      "unicode": "e7b4",
+      "unicode_decimal": 59316
+    },
+    {
+      "icon_id": "7976605",
+      "name": "配速",
+      "font_class": "peisu",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "15225185",
+      "name": "实际用时",
+      "font_class": "shijiyongshi",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "886676",
+      "name": "结束",
+      "font_class": "jieshu",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "7463933",
+      "name": "地图",
+      "font_class": "ditu",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "1488892",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "8195623",
+      "name": "学院-上一节",
+      "font_class": "xueyuan-shangyijie",
+      "unicode": "e6ca",
+      "unicode_decimal": 59082
+    },
+    {
+      "icon_id": "8195624",
+      "name": "学院-下一节",
+      "font_class": "xueyuan-xiayijie",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "10885300",
+      "name": "暂停",
+      "font_class": "zanting",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "430708",
+      "name": "向右箭头",
+      "font_class": "arrow-right",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "1106474",
+      "name": "频次",
+      "font_class": "pinci",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "3763717",
+      "name": "器械设备",
+      "font_class": "qixieshebei",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "11808714",
+      "name": "播放",
+      "font_class": "icon_play",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "736495",
+      "name": "返回 (2)",
+      "font_class": "leftarrow",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "2087570",
+      "name": "运动",
+      "font_class": "sports",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "5849190",
+      "name": "首页",
+      "font_class": "home",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "15995172",
+      "name": "圈子",
+      "font_class": "circle",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "18174947",
+      "name": "我的",
+      "font_class": "mine",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

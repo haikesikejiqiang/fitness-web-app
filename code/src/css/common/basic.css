@@ -1,0 +1,78 @@
+/*
+ * 可复用的公共布局
+ */
+
+.container {
+    width: 90%;
+    margin-left: 5%;
+}
+
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto !important;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+footer {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    height: 78px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer>a {
+    color: #8f8f8f;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+footer>a>.iconfont {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 45px;
+    height: 45px;
+    font-size: 29px;
+}
+
+footer>a>.title {
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.active {
+    color: #4294FF;
+}
+
+.sport_head {
+    height: 49px;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+}
+
+.sport_head a {
+    flex: 1;
+    text-align: center;
+    color: #9a9a9a;
+    line-height: 50px;
+}
+
+.sport_head a.active {
+    color: #429Aff;
+    border-bottom: 2px solid #429Aff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.anchorBL {
+    display: none;
+}

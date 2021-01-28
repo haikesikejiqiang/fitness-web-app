@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的</title>
+</head>
+
+<body>
+    <main>
+        <div class="weui-gallery" id="gallery">
+            <span class="weui-gallery__img" id="galleryImg"></span>
+            <!-- <div class="weui-gallery__opr">
+                <a href="javascript:" class="weui-gallery__del">
+                    <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+                </a>
+            </div> -->
+        </div>
+        <div class="row mb16">
+            <div class="container">
+                <div class="avatar_box">
+                    <div class="avatar">
+                        <img src="../image/vip.png" class="vip" />
+                        <!-- <img src="../image/avatar.png" class="head"> -->
+                        <div class="head"></div>
+                        <!-- <img src="../image/avatar.png" class="head"> -->
+                    </div>
+                    <div class="user_data">
+                        <span id="account">用户名</span>
+                        <a class="iconfont iconarrow-right" id="userNext"></a>
+                    </div>
+                </div>
+                <div class="user_desc pb20">
+                    <p>个性签名：<span id="describe"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row h1 mb16 right">
+            <div class="container plate">
+                <div class="dynamic">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" style="fill: rgba(66, 148, 255, 1)">
+              <path
+                d="M480 160H32c-17.673 0-32-14.327-32-32V64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24z"
+              ></path>
+            </svg>
+                    <span>个人动态</span>
+                </div>
+                <div class="count">
+                    <span id="dynamicCount">-条</span>
+                    <a class="iconfont iconarrow-right"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row right h1 mb16">
+            <div class="container">
+                <div class="plate" id="sportD">
+                    <div class="dynamic">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="64 64 896 896" width="24" height="24" style="fill: rgba(66, 148, 255, 1)">
+                <path
+                  d="M888 792H200V168c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v688c0 4.4 3.6 8 8 8h752c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm-600-80h56c4.4 0 8-3.6 8-8V560c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v144c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V384c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v320c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V462c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v242c0 4.4 3.6 8 8 8zm152 0h56c4.4 0 8-3.6 8-8V304c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v400c0 4.4 3.6 8 8 8z"
+                ></path>
+              </svg>
+                        <span>运动数据</span>
+                    </div>
+                    <div class="count">
+                        <a class="iconfont iconarrow-right"></a>
+                    </div>
+                </div>
+
+                <div class="sport_data">
+                    <div class="movement">
+                        <div class="title">总运动</div>
+                        <div class="update_sport"><span id="times">99999</span>分钟</div>
+                    </div>
+                    <div class="expend">
+                        <div class="title">本周消耗</div>
+                        <div class="update_expend">
+                            <span id="calorie">99999</span>千卡
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row right h1 mb16">
+            <div class="container">
+                <div class="plate">
+                    <div class="dynamic position">
+                        <svg class="M" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" style="fill: rgba(249, 249, 249, 1)">
+                <path d="M18 4H6v2l6.5 6L6 18v2h12v-3h-7l5-5-5-5h7z" />
+              </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="25" height="25" style="fill: rgba(66, 148, 255, 1)">
+                <path
+                  d="M458.622 255.92l45.985-45.005c13.708-12.977 7.316-36.039-10.664-40.339l-62.65-15.99 17.661-62.015c4.991-17.838-11.829-34.663-29.661-29.671l-61.994 17.667-15.984-62.671C337.085.197 313.765-6.276 300.99 7.228L256 53.57 211.011 7.229c-12.63-13.351-36.047-7.234-40.325 10.668l-15.984 62.671-61.995-17.667C74.87 57.907 58.056 74.738 63.046 92.572l17.661 62.015-62.65 15.99C.069 174.878-6.31 197.944 7.392 210.915l45.985 45.005-45.985 45.004c-13.708 12.977-7.316 36.039 10.664 40.339l62.65 15.99-17.661 62.015c-4.991 17.838 11.829 34.663 29.661 29.671l61.994-17.667 15.984 62.671c4.439 18.575 27.696 24.018 40.325 10.668L256 458.61l44.989 46.001c12.5 13.488 35.987 7.486 40.325-10.668l15.984-62.671 61.994 17.667c17.836 4.994 34.651-11.837 29.661-29.671l-17.661-62.015 62.65-15.99c17.987-4.302 24.366-27.367 10.664-40.339l-45.984-45.004z"
+                ></path>
+              </svg>
+                        <span>我的运动徽章</span>
+                    </div>
+                    <div class="count">
+                        <a class="iconfont iconarrow-right"></a>
+                    </div>
+                </div>
+
+                <ul class="medal">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exit">退出登录</div>
+    </main>
+</body>
+
+</html>

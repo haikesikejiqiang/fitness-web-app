@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <title>Document</title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=KL2Q5PnNm2Wlj38S9LstVjpkMCIRQ29g"></script>
+</head>
+
+<body>
+    <div class="mask">
+        <div class="down"></div>
+    </div>
+    <div class="sport_mask">
+        <div class="container">
+            <div class="header">
+                <div class="title">
+                    <div class="outdoor">户外跑</div>
+                    <div class="inthe">运动中</div>
+                </div>
+                <div class="icon">
+                    <div class="music">
+                        <img src="../image/music.png" />
+                    </div>
+                    <div class="on">
+                        <img src="../image/on.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="km"><span>99.99</span>公里</div>
+            <div class="here">
+                <span>GPS信号度低, 数据精准度低</span>
+                <img class="gps" src="../image/here.png" />
+            </div>
+            <div class="pngs">
+                <div>
+                    <img src="../image/pace.png" />
+                    <span>配速</span>
+                </div>
+                <div>
+                    <img src="../image/when.png" />
+                    <span>用时</span>
+                </div>
+                <div>
+                    <img src="../image/Kka.png" />
+                    <span>千卡</span>
+                </div>
+            </div>
+            <div class="whentime">
+                <span>--</span>
+                <span id="runTime">00:00:00</span>
+                <span>3000</span>
+            </div>
+            <div class="footer">
+                <div class="btn">
+                    <div class="minbtn">
+                        <img src="../image/continu.png" />
+                        <span>继续</span>
+                    </div>
+                    <div class="danr">
+                        <img src="../image/1end.png" />
+                        <span>结束</span>
+                    </div>
+                </div>
+                <div class="play">
+                    <img src="../image/paused.png" />
+                    <span>暂停</span>
+                </div>
+                <div class="lock">
+                    <img src="../image/lock.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gps_mask">
+        <div id="gps"></div>
+        <div class="iconfont iconleftarrow door" id="top"></div>
+        <div class="card door">
+            <div class="out door">户外跑</div>
+            <div class="out_speed door">
+                <div>
+                    <span>配速</span>
+                    <div>14'51''</div>
+                </div>
+                <div>
+                    <span>用时</span>
+                    <div id="nextTime">99:99:99</div>
+                </div>
+                <div>
+                    <span>距离(km)</span>
+                    <div>3600</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sport_end">
+        <div id="endGps"></div>
+        <div class="success">完成</div>
+        <div class="card">
+            <div class="out">户外跑</div>
+            <div class="out_data">
+                <div class="km"><span>99.99</span>公里</div>
+                <div class="date">
+                    <span>2020/11/10</span>
+                </div>
+            </div>
+            <div class="out_speed">
+                <div>
+                    <div>14'51''</div>
+                    <span>平均配速</span>
+                </div>
+                <div>
+                    <div id="endTime">99:99:99</div>
+                    <span>用时</span>
+                </div>
+                <div>
+                    <div>3600</div>
+                    <span>千卡</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="container">
+        <p class="now">目前累积骑行距离:</p>
+        <div class="number"><span id="ridekm">999.999</span>公里</div>
+        <div class="mapbox">
+            <div class="map" id="map"></div>
+            <div class="go">GO</div>
+        </div>
+        <div class="path">
+            <div class="text">
+                <h4>骑行路线</h4>
+                <p>使用骑行路线, 邂逅附近的骑行达人</p>
+            </div>
+            <div class="iconfont iconarrow-right"></div>
+        </div>
+    </main>
+</body>
+
+</html>

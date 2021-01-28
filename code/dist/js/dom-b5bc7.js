@@ -1,0 +1,1 @@
+(()=>{"use strict";document.ready=function(t){document.addEventListener?document.addEventListener("DOMContentLoaded",(function(){t()})):document.attachEvent?document.attachEvent("onreadystatechange",(function(){"complete"===document.readyState&&t()})):document.lastChild===document.body&&t()}})();

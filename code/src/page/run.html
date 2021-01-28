@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=KL2Q5PnNm2Wlj38S9LstVjpkMCIRQ29g"></script>
+</head>
+
+<body>
+    <!-- 倒计时蒙版层 -->
+    <div class="fall">
+        <h2></h2>
+    </div>
+    <!-- 运动中蒙版层 -->
+    <div class="sporting">
+        <img src="../image/1.jpg" />
+        <p class="km"><span id="dist">99.99</span> 公里</p>
+        <img src="../image/2.jpg" class="showMap" />
+        <div class="item">
+            <span id="space">--</span>
+            <span class="muchTime">00:00:20</span>
+            <span id="calorie">3000</span>
+        </div>
+        <div class="pause">
+            <div class="sure">
+                <div class="goon">
+                    <img src="../image/continu.png" />
+                    <span>继续</span>
+                </div>
+                <div class="end">
+                    <img src="../image/1end.png" />
+                    <span>结束</span>
+                </div>
+            </div>
+            <div class="pauseBtn">
+                <img src="../image/paused.png" />
+                <span>暂停</span>
+            </div>
+            <div class="lockBtn">
+                <img src="../image/lock.png" />
+            </div>
+        </div>
+    </div>
+    <!-- 地图蒙版层 -->
+    <div class="land" id="land"></div>
+
+    <main>
+        <div class="head">
+            <h4>目前累积跑步距离:</h4>
+            <p><span id="runkm">999.99</span>公里</p>
+        </div>
+        <div id="main"></div>
+        <div class="foot">
+            <div class="route">
+                <h4>目前累积跑步距离:</h4>
+                <p>使用跑步路线, 邂逅附近的同行者</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
